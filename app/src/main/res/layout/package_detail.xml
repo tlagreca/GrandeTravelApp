@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.thomasjamesdev.thomas.grandetravelapp.PackageDetailFragment"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:layout_gravity="center"
+                android:src="@drawable/dubai_night" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/package_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text="$Price.00"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/text_box"
+                android:onClick="bookRedirectToSite"
+                android:padding="10dp"
+                android:text="Book"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity=""
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/package_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Title"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/package_detail_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="Location"
+            android:textAlignment="center"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/package_detail_description_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/package_detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#fff"
+            android:text="Description Text" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
